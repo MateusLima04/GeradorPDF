@@ -52,8 +52,13 @@ public class GeradorPDFController {
 
             document.add(new Paragraph(texto));
 
-        }catch() {
+            document.close();
 
+            mostrarAlerta("Sucesso!", "PDF Gerado com sucesso!");
+        }catch(Exception e) {
+            e.printStackTrace();
+
+            mostrarAlerta(("Erro", "Não foi possível gerar o PDF: " + e.getMessage());
         }
     }
 
