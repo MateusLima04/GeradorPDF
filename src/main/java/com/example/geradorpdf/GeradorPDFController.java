@@ -5,7 +5,6 @@ import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfWriter;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -17,7 +16,7 @@ public class GeradorPDFController {
     @FXML private TextArea txtArea ;
 
     @FXML
-    private void gerarPDF() {
+    private void gerarPDF(){
         try {
             String texto = txtArea.getText().trim();
 
@@ -38,7 +37,7 @@ public class GeradorPDFController {
 
             Stage stage = new Stage();
 
-            java.io.File file = fileChooser.showOpenDialog(stage);
+            java.io.File file = fileChooser.showSaveDialog(stage);
 
             if (file == null) {
                 return;
@@ -58,7 +57,7 @@ public class GeradorPDFController {
         }catch(Exception e) {
             e.printStackTrace();
 
-            mostrarAlerta(("Erro", "Não foi possível gerar o PDF: " + e.getMessage());
+            mostrarAlerta("Erro", "Não foi possível gerar o PDF: " + e.getMessage());
         }
     }
 
