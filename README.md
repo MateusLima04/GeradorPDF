@@ -1,18 +1,23 @@
 # 📄 GeradorPDF
 
-Sistema para **geração automatizada de arquivos PDF**, permitindo criar documentos personalizados de forma prática, rápida e escalável.
+Sistema para **geração automatizada de arquivos PDF com interface gráfica**, permitindo criar documentos personalizados de forma prática e intuitiva.
 
 ---
 
 ## 📌 Sobre o projeto
 
-O **GeradorPDF** foi desenvolvido com o objetivo de automatizar a criação de documentos em PDF, eliminando processos manuais e facilitando a geração de arquivos dinâmicos.
+O **GeradorPDF** é uma aplicação desenvolvida em Java que permite a geração de arquivos PDF através de uma interface gráfica amigável.
+
+O projeto foi criado com o objetivo de automatizar a criação de documentos, tornando o processo mais rápido, organizado e acessível ao usuário.
+
+---
 
 ## 🚀 Tecnologias utilizadas
 
 Este projeto foi desenvolvido utilizando:
 
-- 🟦 **Java** *(ou substitua pela sua linguagem)*  
+- ☕ **Java**  
+- 🖥️ **JavaFX** (Interface gráfica)  
 - 📄 **Biblioteca de geração de PDF** *(ex: iText / PDFBox)*  
 - ⚙️ **Programação Orientada a Objetos (POO)**  
 - 📁 Manipulação de arquivos  
@@ -20,39 +25,36 @@ Este projeto foi desenvolvido utilizando:
 
 ---
 
-## 🎯 Objetivos
+## 🎨 Interface gráfica (JavaFX)
 
-- Automatizar a geração de PDFs  
-- Reduzir erros manuais  
-- Facilitar a reutilização de código  
-- Servir como base para sistemas maiores  
+A aplicação utiliza o **JavaFX** para fornecer uma interface gráfica interativa, permitindo ao usuário:
 
----
-
-## 🧠 Conceitos aplicados
-
-### Manipulação de arquivos
-- Criação e escrita de arquivos PDF  
-- Exportação de documentos  
-
-### Programação modular
-- Separação de responsabilidades  
-- Código organizado e reutilizável  
-
-### Automação
-- Geração automática de documentos  
-- Otimização de processos repetitivos  
-
-### Bibliotecas externas
-- Uso de ferramentas específicas para geração de PDF  
+- Inserir dados de forma visual  
+- Gerar PDFs com poucos cliques  
+- Melhor experiência de uso em comparação com aplicações em console  
 
 ---
 
-## Funcionalidades
+## 🧠 Boas práticas aplicadas
 
-- ✔️ Geração de PDFs  
-- ✔️ Inserção de conteúdo dinâmico  
-- ✔️ Estruturação de textos  
-- ✔️ Exportação automática  
+- ✔️ Organização de código em camadas  
+- ✔️ Separação de responsabilidades  
+- ✔️ Uso de **JavaFX** para UI  
+- ✔️ Tratamento de erros com `try-catch`  
+- ✔️ Código limpo e legível  
 
 ---
+
+## ⚠️ Tratamento de erros
+
+O sistema utiliza **try-catch** para evitar falhas durante a execução.
+
+### Exemplo:
+
+```java
+try {
+    gerarPDF();
+    System.out.println("PDF gerado com sucesso!");
+} catch (Exception e) {
+    System.out.println("Erro ao gerar PDF: " + e.getMessage());
+}
