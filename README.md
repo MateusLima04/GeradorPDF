@@ -56,5 +56,3 @@ Este projeto foi desenvolvido utilizando:
 - ✔️ Exportação automática  
 
 ---
-
-## 📂 Estrutura do projeto
